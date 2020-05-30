@@ -1,0 +1,12 @@
+
+(()=>{
+
+        // Interfaces en TypeScript
+
+
+})();
+
+
+
+
+
