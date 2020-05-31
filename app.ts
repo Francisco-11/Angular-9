@@ -1,8 +1,7 @@
 
 (()=>{
-
-        // Interfaces en TypeScript
-
+        
+        
 
 })();
 
