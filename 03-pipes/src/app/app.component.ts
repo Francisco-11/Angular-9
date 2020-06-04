@@ -36,6 +36,9 @@ export class AppComponent {
     }
   };
 
+  nombre2: string = 'fRaNciSco jaViEr vERa cIsTERnas';
+
+  videoUrl: string = 'https://www.youtube.com/embed/8fyimqSIw8U';
   
 
 
