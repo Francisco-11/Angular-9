@@ -15,7 +15,6 @@ export class BuscadorComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute,
               private _heroesService: HeroesService,
               private _router: Router ) {
-  
   }
 
   ngOnInit(): void {
@@ -24,7 +23,7 @@ export class BuscadorComponent implements OnInit {
       this.termino = params['termino'];
       this.heroes = this._heroesService.buscarHeroes(params['termino']);
       // console.log(this.heroes);
-      
+
     });
 
   }
