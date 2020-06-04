@@ -40,6 +40,6 @@ export class AppComponent {
 
   videoUrl: string = 'https://www.youtube.com/embed/8fyimqSIw8U';
   
-
+  activar: boolean = true;
 
 }
