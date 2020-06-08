@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
 
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -12,7 +13,6 @@ import { AlertController } from '@ionic/angular';
 export class Tab1Page {
 
   constructor( public deseosService:DeseosService,
-              private router: Router,
               private alertCtrl: AlertController) {
     
   
@@ -41,12 +41,13 @@ export class Tab1Page {
         {
           text: 'Crear',
           handler: (data) => {
-            if( data.titulo.length === 0){
+            if ( data.titulo.length === 0){
               return;
             }
-            this.deseosService.crearLista(data.titulo);
+            const listaId = this.deseosService.crearLista(data.titulo);
             // Tengo que crear la lista
-            
+            // this.router.navigateByUrl(`/tabs/tab1/agregar/${ listaId }`);
+
           }
         }
       ]
