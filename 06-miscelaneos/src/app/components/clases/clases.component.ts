@@ -9,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class ClasesComponent implements OnInit {
 
 
-  alerta:string = 'alert-danger';
+  alerta: string = 'alert-danger';
 
   propiedades:any = {
     danger: false
   }
 
-  loading:boolean = false;
+  loading: boolean = false;
 
   constructor() { }
 
